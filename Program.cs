@@ -26,6 +26,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+PrepareDb.PreparePopulation(app);
+
 app.MapControllers();
 
 app.Run();
